@@ -2,10 +2,12 @@ module Debounce(
     
     //1) Add a Clock automation, it specifies the clock signal for the module
     //https://tinyurl.com/af-clock
+    /*[Clock 50 Mhz]*/
     input clk,
 
     //2) Add a Reset automation, it specifies the reset signal for the module
     //https://tinyurl.com/af-reset
+    /*[Reset]*/
     input reset,
 
     input button,
@@ -20,6 +22,7 @@ module Debounce(
 //   it will be inferred from the attched signal, risingButton, since it begins
 //   with the word "rising"
 //https://tinyurl.com/af-risingedge
+​​​​​/*[RisingEdge]*/
 wire risingButton;
 
 //4) We need to use a counter to prevent the button from bouncing. We will use
@@ -31,7 +34,7 @@ wire risingButton;
 //   and start items. You should set count to the max of the counter, once it is 
 //   reached, the counter will be set back to 0. You want to set start to be the 
 //   name of the signal that will trigger the counter once the signal is high. 
-//https://tinyurl.com/af-counter
+/*[Counter --count 128 --start risingButton]*/
 reg [10:0] debounceCounter;
 
 //The following line is given to you. We want the debounced signal to be high

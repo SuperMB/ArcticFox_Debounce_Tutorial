@@ -5,6 +5,7 @@ module DebounceTest;
 //   Add in a TestModule automation and set the module item to the name
 //   of the module you want to test. 
 //https://tinyurl.com/af-testmodule
+/*[TestModule --module Debounce]*/
 
 
 initial begin
@@ -17,6 +18,19 @@ initial begin
     //   the PressButton automations to the test bench. You will see that
     //   the automation generates a random amount of bouncing that is 
     //   determined in the automation's software processing. 
+    /*[PressButton]*/
+
+    /*[PressButton]*/
+
+    /*[PressButton]*/
+
+    /*[PressButton]*/
+
+    /*[PressButton]*/
+
+    /*[PressButton]*/
+
+    /*[PressButton]*/
 
     #50000;
     $finish;
