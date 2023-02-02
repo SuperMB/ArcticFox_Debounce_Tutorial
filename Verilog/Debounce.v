@@ -9,7 +9,7 @@ module Debounce(
     //https://tinyurl.com/af-reset
     /*[Reset]*/
     input reset,
-
+ 
     input button,
 
     output debouncedButton
